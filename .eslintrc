@@ -1,0 +1,3 @@
+{
+  "extends": "@lunjs/eslint-config/js/node"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@lunjs/ensure-esm-import-explicit",
+  "version": "0.1.0",
+  "description": "Ensure that import path is a full path to a module",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "ensure-esm-import-explicit": "bin/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --ext .js index.js bin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunjs/ensure-esm-import-explicit.git"
+  },
+  "keywords": [
+    "ESM",
+    "import",
+    "specifier",
+    "resolution",
+    "ES Modules"
+  ],
+  "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunjs/ensure-esm-import-explicit/issues"
+  },
+  "homepage": "https://github.com/lunjs/ensure-esm-import-explicit#readme",
+  "dependencies": {
+    "@lunjs/readdirp": "^0.2.0",
+    "commander": "^8.3.0",
+    "jscodeshift": "^0.13.0"
+  },
+  "devDependencies": {
+    "@lunjs/eslint-config": "^0.4.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
