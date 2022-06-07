@@ -1,6 +1,6 @@
 {
-  "name": "@lunjs/ensure-esm-import-explicit",
-  "version": "0.1.0",
+  "name": "@gulujs/ensure-esm-import-explicit",
+  "version": "0.2.0",
   "description": "Ensure that import path is a full path to a module",
   "type": "module",
   "main": "index.js",
@@ -9,11 +9,12 @@
   },
   "scripts": {
     "lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --ext .js index.js bin/cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lunjs/ensure-esm-import-explicit.git"
+    "url": "git+https://github.com/gulujs/ensure-esm-import-explicit.git"
   },
   "keywords": [
     "ESM",
@@ -25,17 +26,17 @@
   "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lunjs/ensure-esm-import-explicit/issues"
+    "url": "https://github.com/gulujs/ensure-esm-import-explicit/issues"
   },
-  "homepage": "https://github.com/lunjs/ensure-esm-import-explicit#readme",
+  "homepage": "https://github.com/gulujs/ensure-esm-import-explicit#readme",
   "dependencies": {
-    "@lunjs/readdirp": "^0.2.0",
-    "commander": "^8.3.0",
-    "jscodeshift": "^0.13.0"
+    "@gulujs/readdirp": "^0.3.0",
+    "commander": "^9.3.0",
+    "jscodeshift": "^0.13.1"
   },
   "devDependencies": {
-    "@lunjs/eslint-config": "^0.4.0",
-    "eslint": "^8.3.0",
+    "@gulujs/eslint-config": "^0.5.0",
+    "eslint": "^8.17.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "engines": {

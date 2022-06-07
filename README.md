@@ -1,4 +1,4 @@
-# @lunjs/ensure-esm-import-explicit
+# @gulujs/ensure-esm-import-explicit
 
 Ensure that import path is a full path to a module.
 
@@ -8,7 +8,7 @@ To avoid adding `--experimental-specifier-resolution=node` flag, we should provi
 ## Installation
 
 ```sh
-npm i @lunjs/ensure-esm-import-explicit
+npm i @gulujs/ensure-esm-import-explicit
 ```
 
 ## Usage

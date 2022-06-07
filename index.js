@@ -2,7 +2,7 @@ import j from 'jscodeshift';
 import * as fs from 'fs/promises';
 import * as Path from 'path';
 import { EventEmitter } from 'events';
-import { readdirp } from '@lunjs/readdirp';
+import { readdirp } from '@gulujs/readdirp';
 
 export class EnsureEsmImportExplicitTransformer extends EventEmitter {
   /**
